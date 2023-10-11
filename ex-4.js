@@ -8,9 +8,17 @@ const todos = [
 
 function getCompletedTodo(todos) {
   // Start coding here
+  let completedTodos = [];
+  for (let i = 0; i< todos.length; i++){
+    if(todos[i].completed==true){
+      completedTodos.push(todos[i]);
+    }
+  }
+  return completedTodos;
 }
 
-getCompletedTodo(todos);
+const completedTodos = getCompletedTodo(todos);
+console.log(completedTodos);
 
 /* 
 	Output:
